@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a12;
+  --foreground: #e7e5e4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* ======================== PARALLAX ========================
+   Pure CSS scroll-driven animations — no JavaScript.
+   Scene layers use a view() timeline (their own travel through the
+   viewport). The Lab balls use scroll(root) + a fixed vh range so the
+   whole race happens exactly inside the visible window.
+
+   Layout constants (recompute if scene heights change):
+   hero 100vh + scene 2 90vh + scene 3 90vh = 280vh lab offset.
+   Lab balls sit at +100vh inside the lab → race window 290vh → 370vh.
+   ============================================================ */
+
+.parallax-scene {
+  position: relative;
+  overflow: clip;
+  /* overflow: clip (not hidden) — hidden would make this a scroll container
+     and hijack the view() timeline of the layers inside. */
+}
+
+.parallax-layer {
+  position: absolute;
+  inset: -20vh 0; /* overscan ≥ max shift, so translating layers never show gaps */
+  pointer-events: none;
+  will-change: transform;
+}
+
+@supports (animation-timeline: view()) {
+  .parallax-layer {
+    animation-name: parallax-far;
+    animation-duration: 1ms; /* the timeline drives progress; duration is ignored */
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
+  }
+
+  .parallax-layer--mid {
+    animation-name: parallax-mid;
+  }
+
+  .parallax-layer--near {
+    animation-name: parallax-near;
+  }
+
+  /* bigger amplitude = slower apparent speed = the "farther" plane.
+     translateY goes negative -> positive, so the plane LAGS the page. */
+  @keyframes parallax-far {
+    from {
+      transform: translateY(-20vh);
+    }
+    to {
+      transform: translateY(20vh);
+    }
+  }
+
+  @keyframes parallax-mid {
+    from {
+      transform: translateY(-12vh);
+    }
+    to {
+      transform: translateY(12vh);
+    }
+  }
+
+  @keyframes parallax-near {
+    from {
+      transform: translateY(-6vh);
+    }
+    to {
+      transform: translateY(6vh);
+    }
+  }
+
+  /* scroll(root) variant: whole-page scroll progress mapped onto one animation.
+     Drives the thin progress bar pinned to the top of the page. */
+  .scroll-progress {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 50;
+    height: 3px;
+    transform-origin: left;
+    background: linear-gradient(90deg, #f59e0b, #f43f5e);
+    animation-name: scroll-progress;
+    animation-duration: 1ms;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root);
+  }
+
+  @keyframes scroll-progress {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  /* ---- The Parallax Lab: three balls racing on the same screen ---- */
+  .lab-ball {
+    position: absolute;
+    z-index: 10;
+    will-change: transform;
+    animation-duration: 1ms;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root);
+    animation-range: 290vh 370vh; /* lab balls: 280vh + 100vh, visible window ±(90,10) */
+  }
+
+  .lab-ball--far {
+    animation-name: lab-far;
+  }
+
+  .lab-ball--mid {
+    animation-name: lab-mid;
+  }
+
+  .lab-ball--near {
+    animation-name: lab-near;
+  }
+
+  /* each ball sinks by 2 × amplitude while the page scrolls 80vh:
+     far 60vh (25% apparent speed) · mid 36vh (55%) · near 16vh (80%) */
+  @keyframes lab-far {
+    from {
+      transform: translate(-50%, -30vh);
+    }
+    to {
+      transform: translate(-50%, 30vh);
+    }
+  }
+
+  @keyframes lab-mid {
+    from {
+      transform: translate(-50%, -18vh);
+    }
+    to {
+      transform: translate(-50%, 18vh);
+    }
+  }
+
+  @keyframes lab-near {
+    from {
+      transform: translate(-50%, -8vh);
+    }
+    to {
+      transform: translate(-50%, 8vh);
+    }
+  }
+}
+
+/* Parallax is a known vestibular trigger — full fallback to ordinary scrolling. */
+@media (prefers-reduced-motion: reduce) {
+  .parallax-layer,
+  .lab-ball {
+    animation: none;
+  }
+
+  .parallax-layer {
+    transform: none;
+  }
+
+  .lab-ball {
+    transform: translateX(-50%);
+  }
+
+  .scroll-progress {
+    display: none;
+  }
+}
