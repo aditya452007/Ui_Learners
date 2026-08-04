@@ -67,7 +67,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Avatar Group — `avatar-group/`
 - [ ] Multi-select — `multi-select/`
 - [x] Scrollspy — `scrollspy/` (2026-08-03)
-- [ ] Inline Alert vs. Callout vs. Banner — `alert-callout-banner/`
+- [x] Inline Alert vs. Callout vs. Banner — `alert-callout-banner/` (2026-08-04)
 - [ ] *(one more web entry pending catalog refresh on namethatui.com)*
 
 ### macOS (32) — native Apple UI, learned as web approximations
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 4 / 76 · Updated: 2026-08-03
+**Progress:** 5 / 76 · Updated: 2026-08-04
