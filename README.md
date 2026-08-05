@@ -29,7 +29,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Date Picker — `date-picker/` (2026-07-31)
 - [ ] Pagination — `pagination/`
 - [ ] Sign-in Form — `sign-in-form/`
-- [ ] Carousel — `carousel/`
+- [x] Carousel — `carousel/` (2026-08-05)
 - [ ] Site Header vs. Navigation Bar — `header-navbar/`
 - [ ] Card — `card/`
 - [ ] Resize Handle (Size Grip) — `resize-handle/`
