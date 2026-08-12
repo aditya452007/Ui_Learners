@@ -72,7 +72,7 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ### macOS (32) — native Apple UI, learned as web approximations
 
-- [ ] Insertion Caret — `insertion-caret/`
+- [x] Insertion Caret — `insertion-caret/` (2026-08-12)
 - [ ] Pointer (Cursor) — `pointer/`
 - [ ] Alert — `alert/`
 - [ ] Slider — `slider/`
