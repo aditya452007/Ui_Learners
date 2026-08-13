@@ -32,7 +32,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Carousel — `carousel/` (2026-08-05)
 - [ ] Site Header vs. Navigation Bar — `header-navbar/`
 - [ ] Card — `card/`
-- [ ] Resize Handle (Size Grip) — `resize-handle/`
+- [x] Resize Handle (Size Grip) — `resize-handle/` (2026-08-13)
 - [ ] Hamburger Menu (Nav Drawer) — `hamburger-menu/`
 - [ ] Bento Grid — `bento-grid/`
 - [ ] Masonry Layout (Pinterest Grid) — `masonry/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 5 / 76 · Updated: 2026-08-04
+**Progress:** 8 / 76 · Updated: 2026-08-13

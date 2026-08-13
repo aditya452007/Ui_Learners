@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf9;
+  --foreground: #1c1917;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, #d6d3d1 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.grip-indigo::-webkit-resizer {
+  background: repeating-linear-gradient(135deg, transparent 0 4px, #818cf8 4px 6px);
+  border-left: 1px solid #c7d2fe;
+  border-top: 1px solid #c7d2fe;
+  border-radius: 0 0 10px 0;
+}

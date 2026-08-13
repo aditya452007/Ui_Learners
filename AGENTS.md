@@ -1,5 +1,7 @@
 # AGENTS.md — NameThatUi Learning Repository
 
+Working rules for every session in this repo: how to turn one namethatui prompt into a built, runnable, beautifully explained mini-app.
+
 ## Purpose
 
 This repository is a hands-on learning lab for the UI vocabulary of [namethatui.com](https://namethatui.com/).
@@ -42,6 +44,9 @@ non-developer can follow. Replicate that visual language every session.
 The demos ARE the lesson, so the page around the component must look as polished as the component
 itself. This is a design-vocabulary repo — a bare, default-looking page teaches the wrong lesson.
 
+- **Light mode is the preferred and default theme.** Light-first design: white or soft-neutral surfaces,
+  dark text on light, one restrained accent. Dark mode only when a scenario genuinely demands it
+  (a product whose identity is dark — not as a stylistic default).
 - **Never ship default styling.** No unstyled browser forms, no cramped text on a bare white page,
   no raw `<input>`s or un-styled buttons. Every element on screen is deliberately styled.
 - **Use a deliberate visual system:** a consistent spacing scale with generous whitespace, padded
@@ -66,7 +71,7 @@ itself. This is a design-vocabulary repo — a bare, default-looking page teache
    products/contexts where the component genuinely fits. The scenarios must differ meaningfully from each
    other (different mode, different context, different configuration — showing *extensibility*, not
    reskins of the same thing).
-4. **Scaffold the mini-app** (see commands below).
+4. **Scaffold the mini-app** (see [Scaffold commands](#scaffold-commands)).
 5. **Build the learning hub** (`/`) — the anatomy diagram + the dual-audience explanations (see below).
 6. **Build the three scenario pages** (`/scenarios/<name>/`) — each with a **live, working variant**
    of the component in a realistic context, plus a short "why it fits here" note (see below).
@@ -140,10 +145,10 @@ npx create-next-app@latest <folder> --typescript --tailwind --eslint --app --no-
 
 Then, per app:
 
-```powershell
-npm run dev     # http://localhost:3000 — interact with the component
-npm run build   # must pass before considering the session done
-```
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | http://localhost:3000 — interact with the component |
+| `npm run build` | must pass before considering the session done |
 
 ## Cleaning up — freeing disk space
 
