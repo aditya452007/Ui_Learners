@@ -73,7 +73,7 @@ in a folder of its own. The point is to **build each component and use it for re
 ### macOS (32) — native Apple UI, learned as web approximations
 
 - [x] Insertion Caret — `insertion-caret/` (2026-08-12)
-- [ ] Pointer (Cursor) — `pointer/`
+- [x] Pointer (Cursor) — `pointer/` (2026-08-14)
 - [ ] Alert — `alert/`
 - [ ] Slider — `slider/`
 - [ ] Color Well — `color-well/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 8 / 76 · Updated: 2026-08-13
+**Progress:** 9 / 76 · Updated: 2026-08-14
