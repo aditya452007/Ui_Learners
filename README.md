@@ -39,7 +39,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Easing (Timing Function) — `easing/`
 - [ ] Spring Animation — `spring/`
 - [ ] Text Scramble (Decode Effect) — `text-scramble/`
-- [ ] Lightbox — `lightbox/`
+- [x] Lightbox — `lightbox/` (2026-08-18)
 - [ ] Marquee — `marquee/`
 - [ ] Truncation (Ellipsis & Line Clamp) — `truncation/`
 - [ ] Drag & Drop — `drag-and-drop/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 9 / 76 · Updated: 2026-08-14
+**Progress:** 10 / 76 · Updated: 2026-08-18
