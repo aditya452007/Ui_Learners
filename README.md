@@ -43,7 +43,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Marquee — `marquee/`
 - [ ] Truncation (Ellipsis & Line Clamp) — `truncation/`
 - [ ] Drag & Drop — `drag-and-drop/`
-- [ ] Divider vs. Separator vs. Rule — `divider/`
+- [x] Divider vs. Separator vs. Rule — `divider/` (2026-08-19)
 - [ ] Progress Ring vs. Spinner vs. Progress Bar — `progress-indicators/`
 - [ ] The Three Dots (Overflow Menu) — `three-dots/`
 - [ ] Toast (Snackbar) — `toast/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 10 / 76 · Updated: 2026-08-18
+**Progress:** 11 / 76 · Updated: 2026-08-19
