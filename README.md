@@ -78,7 +78,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Slider — `slider/`
 - [ ] Color Well — `color-well/`
 - [ ] Mac Window — `window/`
-- [ ] Split View — `split-view/`
+- [x] Split View — `split-view/` (2026-08-20)
 - [ ] Scroll View (Scroller) — `scroll-view/`
 - [ ] Search Field — `search-field/`
 - [ ] Save Panel — `save-panel/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 11 / 76 · Updated: 2026-08-19
+**Progress:** 12 / 76 · Updated: 2026-08-20
