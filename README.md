@@ -88,7 +88,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Column View (Browser) — `column-view/`
 - [ ] Outline View — `outline-view/`
 - [ ] Menu Bar — `menu-bar/`
-- [ ] Context Menu — `context-menu/`
+- [x] Context Menu — `context-menu/` (2026-08-22)
 - [ ] Disclosure Triangle — `disclosure-triangle/`
 - [ ] Dock Badge — `dock-badge/`
 - [ ] Focus Ring — `focus-ring-macos/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 13 / 76 · Updated: 2026-08-21
+**Progress:** 14 / 76 · Updated: 2026-08-22
