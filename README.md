@@ -46,7 +46,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Divider vs. Separator vs. Rule — `divider/` (2026-08-19)
 - [ ] Progress Ring vs. Spinner vs. Progress Bar — `progress-indicators/`
 - [ ] The Three Dots (Overflow Menu) — `three-dots/`
-- [ ] Toast (Snackbar) — `toast/`
+- [x] Toast (Snackbar) — `toast/` (2026-08-21)
 - [ ] Modal Dialog vs. Drawer vs. Sheet — `dialog-drawer-sheet/`
 - [ ] Popover vs. Dropdown Menu vs. Tooltip — `popover-dropdown-tooltip/`
 - [ ] Scrim (Backdrop / Overlay) — `scrim/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 12 / 76 · Updated: 2026-08-20
+**Progress:** 13 / 76 · Updated: 2026-08-21
