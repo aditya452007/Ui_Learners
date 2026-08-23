@@ -103,7 +103,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Toolbar (Unified Title Bar) — `toolbar/`
 - [ ] Traffic Lights — `traffic-lights/`
 - [ ] Visual Effect Material (Vibrancy) — `vibrancy/`
-- [ ] Menu Bar Extra (Status Item) — `menu-bar-extra/`
+- [x] Menu Bar Extra (Status Item) — `menu-bar-extra/` (2026-08-23)
 
 ---
 
