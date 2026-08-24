@@ -59,7 +59,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Breadcrumbs — `breadcrumbs/`
 - [ ] Sticky vs. Fixed Positioning — `sticky-fixed/`
 - [ ] Focus Ring (`:focus-visible`) — `focus-ring/`
-- [ ] Empty State — `empty-state/`
+- [x] Empty State — `empty-state/` (2026-08-24)
 - [ ] Hover Card — `hover-card/`
 - [ ] Switch vs. Checkbox vs. Radio — `switch-checkbox-radio/`
 - [ ] Toggle Group (Segmented Control) — `toggle-group/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 14 / 76 · Updated: 2026-08-22
+**Progress:** 15 / 76 · Updated: 2026-08-24
