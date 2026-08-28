@@ -52,7 +52,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Scrim (Backdrop / Overlay) — `scrim/`
 - [ ] Skeleton vs. Spinner — `skeleton-spinner/`
 - [ ] Combobox (Autocomplete / Typeahead) — `combobox/`
-- [ ] Command Palette — `command-palette/`
+- [x] Command Palette — `command-palette/` (2026-08-26)
 - [ ] Accordion (Disclosure) — `accordion/`
 - [ ] Tabs — `tabs/`
 - [ ] Badge vs. Chip vs. Pill vs. Tag — `badge-chip-pill/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 15 / 76 · Updated: 2026-08-24
+**Progress:** 16 / 76 · Updated: 2026-08-26
