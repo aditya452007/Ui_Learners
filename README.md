@@ -74,7 +74,7 @@ in a folder of its own. The point is to **build each component and use it for re
 
 - [x] Insertion Caret — `insertion-caret/` (2026-08-12)
 - [x] Pointer (Cursor) — `pointer/` (2026-08-14)
-- [ ] Alert — `alert/`
+- [x] Alert — `alert/` (2026-08-29)
 - [ ] Slider — `slider/`
 - [ ] Color Well — `color-well/`
 - [ ] Mac Window — `window/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 16 / 76 · Updated: 2026-08-26
+**Progress:** 17 / 76 · Updated: 2026-08-29

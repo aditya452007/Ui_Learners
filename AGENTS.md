@@ -1,5 +1,10 @@
 # AGENTS.md — NameThatUi Learning Repository
 
+## ⚡ Execution Rule — Run in Parallel
+**Always execute independent operations in parallel.** Use concurrent tool calls for searches, reads, and any operations that don't depend on each other. Batch multiple bash commands in a single message when they're independent. This is mandatory — sequential execution wastes time.
+
+---
+
 Working rules for every session in this repo: how to turn one namethatui prompt into a built, runnable, beautifully explained mini-app.
 
 ## Purpose
@@ -59,6 +64,29 @@ itself. This is a design-vocabulary repo — a bare, default-looking page teache
   labels that never collide with the component.
 - **Check the result:** run the app and look at it. If anything looks flat, cramped, misaligned or
   default, fix it before reporting back.
+
+---
+
+## Strict Design Standards — Non-Negotiable
+
+The following are **prohibited** and will be rejected:
+
+- **No purple gradients** or any "AI slope" aesthetic — these look unprofessional and cheap
+- **No dark-mode-by-default** websites — light mode is mandatory unless the specific product
+  identity genuinely requires dark (e.g., a developer tool, a night-mode app)
+- **No unprofessional color schemes** — no neon, no clashing brights, no gradient abuse
+- **No amateur typography** — use professional font stacks (system fonts or high-quality web fonts),
+  proper line heights, consistent scale, clear hierarchy
+- **No flat, cramped, or misaligned layouts** — every page must have deliberate spacing scale,
+  visual hierarchy, breathing room, and alignment to a baseline grid
+- **No "default browser" look** — every form, button, input, card, table must be intentionally styled
+
+**Required for every page:**
+- Light mode, professional color palette (one restrained accent, neutral grays/whites)
+- Professional typography: clear hierarchy (headings → body → caption), proper contrast ratios
+- Deliberate layout: consistent spacing scale (4/8/12/16/24/32px), aligned to grid, generous whitespace
+- Visual hierarchy that guides the eye: primary > secondary > tertiary actions clearly differentiated
+- Premium feel: subtle shadows, rounded corners, micro-transitions, real content (not lorem ipsum)
 
 ## Workflow (per session)
 
