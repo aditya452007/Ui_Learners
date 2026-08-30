@@ -85,7 +85,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Token Field — `token-field/`
 - [ ] Combo Button — `combo-button/`
 - [ ] Level Indicator — `level-indicator/`
-- [ ] Column View (Browser) — `column-view/`
+- [x] Column View (Browser) — `column-view/` (2026-08-30)
 - [ ] Outline View — `outline-view/`
 - [ ] Menu Bar — `menu-bar/`
 - [x] Context Menu — `context-menu/` (2026-08-22)
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 17 / 76 · Updated: 2026-08-29
+**Progress:** 18 / 76 · Updated: 2026-08-30
