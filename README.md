@@ -91,7 +91,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Context Menu — `context-menu/` (2026-08-22)
 - [ ] Disclosure Triangle — `disclosure-triangle/`
 - [ ] Dock Badge — `dock-badge/`
-- [ ] Focus Ring — `focus-ring-macos/`
+- [x] Focus Ring — `focus-ring-macos/` (2026-09-01)
 - [ ] Inspector — `inspector/`
 - [ ] Panel (Floating Window / HUD) — `panel/`
 - [ ] Popover — `popover-macos/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 19 / 76 · Updated: 2026-08-31
+**Progress:** 20 / 76 · Updated: 2026-09-01
