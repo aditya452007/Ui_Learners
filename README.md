@@ -100,11 +100,11 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Sheet — `sheet/`
 - [ ] Sidebar (Source List) — `sidebar/`
 - [ ] Stepper — `stepper/`
-- [ ] Toolbar (Unified Title Bar) — `toolbar/`
+- [x] Toolbar (Unified Title Bar) — `toolbar/` (2026-09-07)
 - [ ] Traffic Lights — `traffic-lights/`
 - [ ] Visual Effect Material (Vibrancy) — `vibrancy/`
 - [x] Menu Bar Extra (Status Item) — `menu-bar-extra/` (2026-08-23)
 
 ---
 
-**Progress:** 25 / 76 · Updated: 2026-09-06
+**Progress:** 26 / 76 · Updated: 2026-09-07
