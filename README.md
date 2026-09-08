@@ -35,7 +35,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Resize Handle (Size Grip) — `resize-handle/` (2026-08-13)
 - [x] Hamburger Menu (Nav Drawer) — `hamburger-menu/` (2026-09-02)
 - [ ] Bento Grid — `bento-grid/`
-- [ ] Masonry Layout (Pinterest Grid) — `masonry/`
+- [x] Masonry Layout (Pinterest Grid) — `masonry/` (2026-09-08)
 - [ ] Easing (Timing Function) — `easing/`
 - [ ] Spring Animation — `spring/`
 - [ ] Text Scramble (Decode Effect) — `text-scramble/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 26 / 76 · Updated: 2026-09-07
+**Progress:** 27 / 76 · Updated: 2026-09-08
