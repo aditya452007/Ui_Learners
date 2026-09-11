@@ -54,7 +54,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Combobox (Autocomplete / Typeahead) — `combobox/`
 - [x] Command Palette — `command-palette/` (2026-08-26)
 - [ ] Accordion (Disclosure) — `accordion/`
-- [ ] Tabs — `tabs/`
+- [x] Tabs — `tabs/` (2026-09-09)
 - [ ] Badge vs. Chip vs. Pill vs. Tag — `badge-chip-pill/`
 - [ ] Breadcrumbs — `breadcrumbs/`
 - [ ] Sticky vs. Fixed Positioning — `sticky-fixed/`
@@ -75,7 +75,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Insertion Caret — `insertion-caret/` (2026-08-12)
 - [x] Pointer (Cursor) — `pointer/` (2026-08-14)
 - [x] Alert — `alert/` (2026-08-29)
-- [ ] Slider — `slider/`
+- [x] Slider — `slider/` (2026-09-11)
 - [ ] Color Well — `color-well/`
 - [x] Mac Window — `window/` (2026-09-04)
 - [x] Split View — `split-view/` (2026-08-20)
@@ -101,10 +101,10 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Sidebar (Source List) — `sidebar/`
 - [ ] Stepper — `stepper/`
 - [x] Toolbar (Unified Title Bar) — `toolbar/` (2026-09-07)
-- [ ] Traffic Lights — `traffic-lights/`
+- [x] Traffic Lights — `traffic-lights/` (2026-09-11)
 - [ ] Visual Effect Material (Vibrancy) — `vibrancy/`
 - [x] Menu Bar Extra (Status Item) — `menu-bar-extra/` (2026-08-23)
 
 ---
 
-**Progress:** 27 / 76 · Updated: 2026-09-08
+**Progress:** 31 / 76 · Updated: 2026-09-11
