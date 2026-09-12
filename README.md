@@ -57,7 +57,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Tabs — `tabs/` (2026-09-09)
 - [ ] Badge vs. Chip vs. Pill vs. Tag — `badge-chip-pill/`
 - [ ] Breadcrumbs — `breadcrumbs/`
-- [ ] Sticky vs. Fixed Positioning — `sticky-fixed/`
+- [x] Sticky vs. Fixed Positioning — `sticky-fixed/` (2026-09-12)
 - [ ] Focus Ring (`:focus-visible`) — `focus-ring/`
 - [x] Empty State — `empty-state/` (2026-08-24)
 - [ ] Hover Card — `hover-card/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 31 / 76 · Updated: 2026-09-11
+**Progress:** 32 / 76 · Updated: 2026-09-12

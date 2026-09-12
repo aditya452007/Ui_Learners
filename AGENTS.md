@@ -171,6 +171,13 @@ From the repo root, for each new component folder (Windows / PowerShell):
 npx create-next-app@latest <folder> --typescript --tailwind --eslint --app --no-src-dir --import-alias "@/*" --turbopack --yes
 ```
 
+> If a scaffold/install is ever interrupted (timeout, killed terminal) and `next dev`
+> later fails with `next-swc.win32-x64-msvc.node is not a valid Win32 application`,
+> the native SWC binary was left truncated — `npm install` will NOT re-verify it.
+> Fix: `Remove-Item -Recurse <folder>\node_modules\@next\swc-*` then `npm install`
+> again. Verify with `node -e "require('@next/swc-win32-x64-msvc')"` (prints nothing
+> on success).
+
 Then, per app:
 
 | Command | Purpose |
