@@ -93,7 +93,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Dock Badge — `dock-badge/`
 - [x] Focus Ring — `focus-ring-macos/` (2026-09-01)
 - [ ] Inspector — `inspector/`
-- [ ] Panel (Floating Window / HUD) — `panel/`
+- [x] Panel (Floating Window / HUD) — `panel/` (2026-09-13)
 - [ ] Popover — `popover-macos/`
 - [ ] Pop-Up vs. Pull-Down vs. Combo Box — `popup-pulldown-combo/`
 - [ ] Segmented Control — `segmented-control/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 32 / 76 · Updated: 2026-09-12
+**Progress:** 33 / 76 · Updated: 2026-09-13
