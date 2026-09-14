@@ -51,7 +51,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Popover vs. Dropdown Menu vs. Tooltip — `popover-dropdown-tooltip/`
 - [ ] Scrim (Backdrop / Overlay) — `scrim/`
 - [ ] Skeleton vs. Spinner — `skeleton-spinner/`
-- [ ] Combobox (Autocomplete / Typeahead) — `combobox/`
+- [x] Combobox (Autocomplete / Typeahead) — `combobox/` (2026-09-14)
 - [x] Command Palette — `command-palette/` (2026-08-26)
 - [ ] Accordion (Disclosure) — `accordion/`
 - [x] Tabs — `tabs/` (2026-09-09)
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 33 / 76 · Updated: 2026-09-13
+**Progress:** 34 / 76 · Updated: 2026-09-14
