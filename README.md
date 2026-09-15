@@ -50,7 +50,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Modal Dialog vs. Drawer vs. Sheet — `dialog-drawer-sheet/` (2026-09-05)
 - [ ] Popover vs. Dropdown Menu vs. Tooltip — `popover-dropdown-tooltip/`
 - [ ] Scrim (Backdrop / Overlay) — `scrim/`
-- [ ] Skeleton vs. Spinner — `skeleton-spinner/`
+- [x] Skeleton vs. Spinner — `skeleton-spinner/` (2026-09-15)
 - [x] Combobox (Autocomplete / Typeahead) — `combobox/` (2026-09-14)
 - [x] Command Palette — `command-palette/` (2026-08-26)
 - [ ] Accordion (Disclosure) — `accordion/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 34 / 76 · Updated: 2026-09-14
+**Progress:** 35 / 76 · Updated: 2026-09-15
