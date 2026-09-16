@@ -61,7 +61,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Focus Ring (`:focus-visible`) — `focus-ring/`
 - [x] Empty State — `empty-state/` (2026-08-24)
 - [ ] Hover Card — `hover-card/`
-- [ ] Switch vs. Checkbox vs. Radio — `switch-checkbox-radio/`
+- [x] Switch vs. Checkbox vs. Radio — `switch-checkbox-radio/` (2026-09-16)
 - [ ] Toggle Group (Segmented Control) — `toggle-group/`
 - [x] Steps — `steps/` (2026-08-01)
 - [ ] Avatar Group — `avatar-group/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 35 / 76 · Updated: 2026-09-15
+**Progress:** 36 / 76 · Updated: 2026-09-16
