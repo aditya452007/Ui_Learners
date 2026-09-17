@@ -84,7 +84,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Save Panel — `save-panel/` (2026-08-31)
 - [x] Token Field — `token-field/` (2026-09-06)
 - [ ] Combo Button — `combo-button/`
-- [ ] Level Indicator — `level-indicator/`
+- [x] Level Indicator — `level-indicator/` (2026-09-17)
 - [x] Column View (Browser) — `column-view/` (2026-08-30)
 - [ ] Outline View — `outline-view/`
 - [ ] Menu Bar — `menu-bar/`
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 36 / 76 · Updated: 2026-09-16
+**Progress:** 37 / 76 · Updated: 2026-09-17
