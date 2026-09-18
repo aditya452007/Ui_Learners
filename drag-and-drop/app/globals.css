@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf9;
+  --foreground: #1c1917;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    ui-sans-system,
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Text",
+    "Segoe UI",
+    Inter,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #2563eb;
+  color: white;
+}
+
+/* Custom drag ghost element (used with DataTransfer.setDragImage) */
+.dnd-ghost {
+  pointer-events: none;
+  position: fixed;
+  top: -1000px;
+  left: -1000px;
+  z-index: 9999;
+}
+
+/* Smooth lift for the item being dragged */
+.dnd-dragging {
+  opacity: 0.35;
+}
+
+/* Insertion line pulse */
+@keyframes dnd-line-in {
+  from {
+    transform: scaleX(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.dnd-insertion {
+  animation: dnd-line-in 140ms ease-out;
+}
+
+/* Resize handle squares */
+.dnd-resize-handle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: #fff;
+  border: 2px solid #2563eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  touch-action: none;
+}
+
+.dnd-resize-handle:hover {
+  background: #dbeafe;
+}
