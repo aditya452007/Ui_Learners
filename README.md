@@ -64,7 +64,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Switch vs. Checkbox vs. Radio — `switch-checkbox-radio/` (2026-09-16)
 - [ ] Toggle Group (Segmented Control) — `toggle-group/`
 - [x] Steps — `steps/` (2026-08-01)
-- [ ] Avatar Group — `avatar-group/`
+- [x] Avatar Group — `avatar-group/` (2026-09-19)
 - [ ] Multi-select — `multi-select/`
 - [x] Scrollspy — `scrollspy/` (2026-08-03)
 - [x] Inline Alert vs. Callout vs. Banner — `alert-callout-banner/` (2026-08-04)
@@ -107,4 +107,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 38 / 76 · Updated: 2026-09-18
+**Progress:** 39 / 76 · Updated: 2026-09-19
