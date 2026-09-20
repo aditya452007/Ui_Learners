@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf9;
+  --foreground: #1c1917;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Native disclosure: hide the browser's default marker so our
+   custom indicator is the only one. Keyboard + semantics stay native. ── */
+summary.acc-summary {
+  list-style: none;
+  cursor: pointer;
+}
+summary.acc-summary::-webkit-details-marker {
+  display: none;
+}
+summary.acc-summary::marker {
+  content: "";
+}
+
+/* ── Animated reveal for native <details> panels.
+   The grid-rows 0fr → 1fr trick animates height without measuring,
+   and adds no ARIA of its own (the browser owns open/closed). ── */
+.acc-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.32s cubic-bezier(0.32, 0.72, 0, 1);
+}
+details[open] > .acc-panel {
+  grid-template-rows: 1fr;
+}
+.acc-panel > div {
+  overflow: hidden;
+}
+.acc-noanim .acc-panel {
+  transition: none;
+}
+
+/* ── Same grid-rows trick for the fully custom primitive (React state driven) ── */
+.custom-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.32s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.custom-panel[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+.custom-panel > div {
+  overflow: hidden;
+}
+
+/* Chrome's ::details-content transition hook (progressive enhancement) */
+details.acc::details-content {
+  transition: opacity 0.25s ease;
+}
+
+/* Focus visibility: custom aesthetic ring, never the default outline */
+.acc-summary:focus-visible,
+button.acc-focusable:focus-visible,
+a.acc-focusable:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 3px;
+  border-radius: 8px;
+}

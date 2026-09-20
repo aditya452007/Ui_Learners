@@ -21,7 +21,7 @@ in a folder of its own. The point is to **build each component and use it for re
 4. Run it, play with it, click the parts, break it.
 5. Tick it off the checklist below.
 
-## Checklist (76 components — 44 web, 32 macOS)
+## Checklist (80 components — 48 web, 32 macOS)
 
 ### Web (44)
 
@@ -53,7 +53,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Skeleton vs. Spinner — `skeleton-spinner/` (2026-09-15)
 - [x] Combobox (Autocomplete / Typeahead) — `combobox/` (2026-09-14)
 - [x] Command Palette — `command-palette/` (2026-08-26)
-- [ ] Accordion (Disclosure) — `accordion/`
+- [x] Accordion (Disclosure) — `accordion/` (2026-09-20)
 - [x] Tabs — `tabs/` (2026-09-09)
 - [ ] Badge vs. Chip vs. Pill vs. Tag — `badge-chip-pill/`
 - [ ] Breadcrumbs — `breadcrumbs/`
@@ -68,7 +68,10 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Multi-select — `multi-select/`
 - [x] Scrollspy — `scrollspy/` (2026-08-03)
 - [x] Inline Alert vs. Callout vs. Banner — `alert-callout-banner/` (2026-08-04)
-- [ ] *(one more web entry pending catalog refresh on namethatui.com)*
+- [ ] Bottom Navigation (Tab Bar) — `bottom-navigation/`
+- [ ] Timeline — `timeline/`
+- [ ] Status Dot (Presence Indicator) — `status-dot/`
+- [ ] Chat Bubble (Message Bubble) — `chat-bubble/`
 
 ### macOS (32) — native Apple UI, learned as web approximations
 
@@ -107,4 +110,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 39 / 76 · Updated: 2026-09-19
+**Progress:** 40 / 80 · Updated: 2026-09-20
