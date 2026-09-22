@@ -69,7 +69,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Scrollspy — `scrollspy/` (2026-08-03)
 - [x] Inline Alert vs. Callout vs. Banner — `alert-callout-banner/` (2026-08-04)
 - [x] Bottom Navigation (Tab Bar) — `bottom-navigation/` (2026-09-22)
-- [ ] Timeline — `timeline/`
+- [x] Timeline — `timeline/` (2026-09-22)
 - [ ] Status Dot (Presence Indicator) — `status-dot/`
 - [ ] Chat Bubble (Message Bubble) — `chat-bubble/`
 
@@ -110,4 +110,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 41 / 80 · Updated: 2026-09-22
+**Progress:** 42 / 80 · Updated: 2026-09-22
