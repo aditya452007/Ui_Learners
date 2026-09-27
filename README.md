@@ -36,7 +36,7 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Hamburger Menu (Nav Drawer) — `hamburger-menu/` (2026-09-02)
 - [ ] Bento Grid — `bento-grid/`
 - [x] Masonry Layout (Pinterest Grid) — `masonry/` (2026-09-08)
-- [ ] Easing (Timing Function) — `easing/`
+- [x] Easing (Timing Function) — `easing/` (2026-09-23)
 - [ ] Spring Animation — `spring/`
 - [ ] Text Scramble (Decode Effect) — `text-scramble/`
 - [x] Lightbox — `lightbox/` (2026-08-18)
@@ -71,7 +71,8 @@ in a folder of its own. The point is to **build each component and use it for re
 - [x] Bottom Navigation (Tab Bar) — `bottom-navigation/` (2026-09-22)
 - [x] Timeline — `timeline/` (2026-09-22)
 - [ ] Status Dot (Presence Indicator) — `status-dot/`
-- [ ] Chat Bubble (Message Bubble) — `chat-bubble/`
+- [x] Chat Bubble (Message Bubble) — `chat-bubble/` (2026-09-23)
+- [x] Data Table — `data-table/` (2026-09-27)
 
 ### macOS (32) — native Apple UI, learned as web approximations
 
@@ -110,4 +111,4 @@ in a folder of its own. The point is to **build each component and use it for re
 
 ---
 
-**Progress:** 42 / 80 · Updated: 2026-09-22
+**Progress:** 45 / 80 · Updated: 2026-09-27

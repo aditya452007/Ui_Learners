@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f1f5f9;
+  --foreground: #0f172a;
+  --accent: #0f766e;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono,
+code,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* ---- Data table chrome ---- */
+
+.dt-scroll {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+.dt-scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.dt-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.dt-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Column resize handle: a wide grab zone with a thin visible line */
+.dt-resize {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -7px;
+  width: 14px;
+  cursor: col-resize;
+  touch-action: none;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+  border-radius: 4px;
+}
+.dt-resize > span {
+  width: 2px;
+  height: 100%;
+  background: transparent;
+  border-radius: 9999px;
+  transition: background 120ms ease;
+}
+.dt-resize:hover > span,
+.dt-resize:focus-visible > span,
+.dt-resize[data-active="true"] > span,
+.dt-resize[data-spot="true"] > span {
+  background: #0f766e;
+}
+.dt-resize:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: -2px;
+}
+.dt-resize[data-active="true"] {
+  cursor: grabbing;
+}
+
+/* Deliberately styled native checkboxes (keeps the real indeterminate dash) */
+input[type="checkbox"].dt-check {
+  appearance: auto;
+  width: 1rem;
+  height: 1rem;
+  accent-color: #0f766e;
+  cursor: pointer;
+  border-radius: 4px;
+}
+input[type="checkbox"].dt-check:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 2px;
+}
+
+/* Table header sort buttons */
+.dt-sortbtn:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: -2px;
+  border-radius: 6px;
+}
+
+/* Small toggle switch used for zebra / density controls */
+.dt-switch {
+  position: relative;
+  width: 2.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  background: #cbd5e1;
+  transition: background 150ms ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.dt-switch[data-on="true"] {
+  background: #0f766e;
+}
+.dt-switch > span {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 9999px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.3);
+  transition: transform 150ms ease;
+}
+.dt-switch[data-on="true"] > span {
+  transform: translateX(1rem);
+}
+.dt-switch:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 2px;
+}
+
+/* Text inputs + selects, intentionally styled (no default browser look) */
+.dt-input,
+.dt-select {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  background: #ffffff;
+  color: #0f172a;
+}
+.dt-input::placeholder {
+  color: #94a3b8;
+}
+.dt-input:focus,
+.dt-select:focus {
+  outline: 2px solid #0f766e;
+  outline-offset: 1px;
+  border-color: #0f766e;
+}
