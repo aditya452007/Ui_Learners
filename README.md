@@ -106,9 +106,9 @@ in a folder of its own. The point is to **build each component and use it for re
 - [ ] Stepper — `stepper/`
 - [x] Toolbar (Unified Title Bar) — `toolbar/` (2026-09-07)
 - [x] Traffic Lights — `traffic-lights/` (2026-09-11)
-- [ ] Visual Effect Material (Vibrancy) — `vibrancy/`
+- [x] Visual Effect Material (Vibrancy) — `vibrancy/` (2026-09-28)
 - [x] Menu Bar Extra (Status Item) — `menu-bar-extra/` (2026-08-23)
 
 ---
 
-**Progress:** 45 / 80 · Updated: 2026-09-27
+**Progress:** 46 / 80 · Updated: 2026-09-28

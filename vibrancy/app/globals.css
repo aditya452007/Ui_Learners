@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f5f7;
+  --foreground: #1d1d1f;
+  --accent: #0071e3;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, -apple-system, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono,
+code,
+pre {
+  font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* ------------------------------------------------------------------ */
+/* Demo wallpapers — muted, photographic-feeling fields of color.      */
+/* These stand in for the user's desktop picture behind the glass.     */
+/* ------------------------------------------------------------------ */
+
+.wp {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.wp-meadow {
+  background-color: #dfe3da;
+  background-image:
+    radial-gradient(120% 90% at 12% 8%, #ccd8c4 0%, transparent 55%),
+    radial-gradient(110% 100% at 88% 18%, #b8d2cf 0%, transparent 55%),
+    radial-gradient(130% 120% at 72% 95%, #e7dcc0 0%, transparent 60%),
+    radial-gradient(90% 90% at 22% 88%, #b4c9d4 0%, transparent 55%);
+}
+
+.wp-dune {
+  background-color: #e8e2d3;
+  background-image:
+    radial-gradient(120% 90% at 85% 10%, #ddd0b4 0%, transparent 55%),
+    radial-gradient(100% 110% at 10% 25%, #d6c2a6 0%, transparent 55%),
+    radial-gradient(130% 120% at 60% 100%, #c8cdb1 0%, transparent 60%),
+    radial-gradient(90% 90% at 30% 80%, #bccfd2 0%, transparent 55%);
+}
+
+.wp-dusk {
+  background-color: #1f252b;
+  background-image:
+    radial-gradient(120% 90% at 15% 10%, #2c4f55 0%, transparent 55%),
+    radial-gradient(110% 100% at 88% 22%, #35424e 0%, transparent 55%),
+    radial-gradient(130% 120% at 70% 95%, #4a4033 0%, transparent 60%),
+    radial-gradient(90% 90% at 25% 85%, #22333a 0%, transparent 55%);
+}
+
+/* Fine film grain so the flat CSS gradients feel photographic */
+.wp-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.055;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+}
+
+/* ------------------------------------------------------------------ */
+/* Apple-style switch                                                  */
+/* ------------------------------------------------------------------ */
+
+.vy-switch {
+  position: relative;
+  width: 2.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: #d2d2d7;
+  transition: background 150ms ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.vy-switch[data-on="true"] {
+  background: #0071e3;
+}
+.vy-switch > span {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 150ms ease;
+}
+.vy-switch[data-on="true"] > span {
+  transform: translateX(1rem);
+}
+.vy-switch:focus-visible {
+  outline: 2px solid #0071e3;
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Intentionally styled inputs, selects, buttons                       */
+/* ------------------------------------------------------------------ */
+
+.vy-input,
+.vy-select {
+  border: 1px solid #d2d2d7;
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  background: #ffffff;
+  color: #1d1d1f;
+}
+.vy-input::placeholder {
+  color: #86868b;
+}
+.vy-input:focus,
+.vy-select:focus {
+  outline: 2px solid #0071e3;
+  outline-offset: 1px;
+  border-color: #0071e3;
+}
+
+/* macOS-style slider (volume / brightness) */
+input[type="range"].vy-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.35);
+  outline: none;
+  cursor: pointer;
+}
+input[type="range"].vy-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: #ffffff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+  cursor: grab;
+}
+input[type="range"].vy-range::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-radius: 9999px;
+  background: #ffffff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+  cursor: grab;
+}
+input[type="range"].vy-range:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Soft key shadow for floating glass windows */
+.vy-window-shadow {
+  box-shadow:
+    0 0 0 0.5px rgba(0, 0, 0, 0.12),
+    0 24px 70px rgba(0, 0, 0, 0.28),
+    0 4px 16px rgba(0, 0, 0, 0.18);
+}
